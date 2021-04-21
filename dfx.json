@@ -1,0 +1,34 @@
+{
+  "canisters": {
+    "dpunk": {
+      "main": "src/dpunk/main.mo",
+      "type": "motoko"
+    },
+    "dpunk_assets": {
+      "dependencies": [
+        "dpunk"
+      ],
+      "frontend": {
+        "entrypoint": "src/dpunk_assets/public/index.html"
+      },
+      "source": [
+        "src/dpunk_assets/assets",
+        "dist/dpunk_assets/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "packtool": ""
+    }
+  },
+  "dfx": "0.6.26",
+  "networks": {
+    "local": {
+      "bind": "127.0.0.1:8000",
+      "type": "ephemeral"
+    }
+  },
+  "version": 1
+}
