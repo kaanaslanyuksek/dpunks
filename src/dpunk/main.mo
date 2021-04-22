@@ -18,6 +18,10 @@ actor DPunk {
 
     let punks = HashMap.HashMap<Nat, Punk>(10000, isEq, hashNat);
 
+    public query func getOwnedPunks() : async Nat {
+        punks.size()
+    };
+
     public query func getPunks() : async [Punk] {
         var items: [Punk] = [];
         

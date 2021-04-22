@@ -9,7 +9,7 @@
         "dpunk"
       ],
       "frontend": {
-        "entrypoint": "src/dpunk_assets/public/index.html"
+        "entrypoint": "src/dpunk_assets/public/index.jsx"
       },
       "source": [
         "src/dpunk_assets/assets",
